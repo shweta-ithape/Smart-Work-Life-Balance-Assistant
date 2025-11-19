@@ -1,198 +1,167 @@
-🧠 Smart Work–Life Balance Assistant
+**# 🧠 Smart Work–Life Balance Assistant**
+An AI-powered assistant that helps users maintain a healthy work–life balance by intelligently managing tasks, analyzing priorities, and scheduling work sessions using autonomous agents.
 
-AI-powered productivity system built with intelligent agents
+---
 
-Maintaining work–life balance is harder than ever—deadlines, meetings, tasks, and personal commitments create a constant overload. The Smart Work–Life Balance Assistant solves this by intelligently managing tasks, analyzing priorities, and scheduling work sessions using autonomous AI agents.
-This system reduces cognitive load and brings clarity, structure, and balance to everyday life.
+## 🌟 Overview
+Modern life is busy—deadlines, meetings, and personal commitments create daily chaos. Most productivity tools require manual entry and decision-making, which leads to stress and overload.
 
-🚀 Problem Statement
+The **Smart Work–Life Balance Assistant** solves this problem using intelligent agents that:
+- Understand natural language commands  
+- Create and manage tasks  
+- Analyze urgency automatically  
+- Schedule work sessions for you  
+- Reduce cognitive load  
+- Improve productivity and well-being  
 
-Modern individuals handle dozens of tasks and deadlines yet lack tools that intelligently automate decision-making. Existing productivity apps require:
+---
 
-Manual task entry
+## 🚨 Problem Statement
+Work–life imbalance causes stress, burnout, and reduced productivity.  
+People juggle:
+- Professional tasks  
+- Deadlines  
+- Meetings  
+- Personal commitments  
 
-Manual prioritization
+But existing tools require too much manual work.
 
-Manual scheduling
+This project aims to create an **intelligent, automated, natural-language–based productivity assistant** that organizes your day without micromanagement.
 
-Manual planning
+---
 
-This creates decision fatigue, stress, and burnout.
+## 🤖 Why Agents?
+Agents are the ideal solution because they enable:
 
-The solution?
-A smart assistant that understands natural language, manages workload, schedules tasks, analyzes urgency, and helps create a healthy work–life balance automatically.
+### **✔ Natural Language Understanding**
+Users simply say:
+- “Create a task due tomorrow”
+- “Analyze priority”
+- “Schedule a 2-hour session tomorrow afternoon”
 
-🤖 Why Agents?
-✔ Natural Language Understanding
+### ✔ **Autonomous Decision-Making**
+The agent automatically:
+- Determines priority  
+- Suggests schedules  
+- Manages workload  
 
-Users can speak naturally:
+### ✔ **Modularity & Scalability**
+New agents can be added later:
+- Wellness Agent  
+- Break Reminder Agent  
+- Health Tracking Agent  
 
-“Create a task due tomorrow.”
+### ✔ **Reduced Cognitive Load**
+No manual scheduling or priority thinking—the agent handles everything.
 
-“Analyze its priority.”
+---
 
-“Schedule a 2-hour session tomorrow afternoon.”
+## 🏗️ Architecture Overview
 
-✔ Autonomous Decision-Making
+### **System Workflow**
+![Workflow](https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F25268808%2Fada29d6deedd4583cc7ef16a2e5f2289%2FWorkflow.png?generation=1763553579023802&alt=media)
 
-Agents decide:
+### **Core Components**
 
-When to schedule
+#### **1. Task Management Module**
+- Creates tasks  
+- Assigns priority  
+- Tracks status  
+- Handles due dates  
 
-How urgent a task is
+#### **2. Event Scheduling Module**
+- Auto-schedules work sessions  
+- Suggests next-day afternoon slot  
+- Connects tasks to events  
 
-What time slots fit best
+#### **3. Priority Analysis Engine**
+Priority based on time left:
+- < 24 hours - **High**  
+- 24–72 hours - **Medium**  
+- > 72 hours - **Low**  
 
-✔ Modularity
-
-New agents (wellness agent, break agent, health agent) can be added easily.
-
-✔ Reduced Cognitive Load
-
-No need to calculate priorities or manage deadlines manually.
-
-Agents make daily organization effortless.
-
-🏗 Architecture Overview
-🔹 System Workflow
-
-🔹 Core Components
-1. Task Management Module
-
-Create tasks
-
-Assign priority
-
-Store status
-
-Track due dates
-
-2. Event Scheduling Module
-
-Auto-schedule work sessions
-
-Suggest next-day afternoon slot
-
-Connect tasks to events
-
-3. Priority Analysis Engine
-
-< 24 hours - High
-
-24–72 hours - Medium
-
-72 hours - Low
-Users instantly know which tasks need attention.
-
-4. Metrics & Logging
-
+#### **4. Metrics & Logging System**
 Tracks:
+- Response time  
+- Total requests  
+- Tool usage  
+- Quality scoring  
 
-Response time
+#### **5. Productivity Runner (Main Agent)**
+- Understands user intent  
+- Extracts parameters  
+- Calls modules  
+- Generates clean output  
 
-Total requests
+---
 
-Tool usage
+## 🎬 Demo
 
-Quality score
-
-5. Productivity Runner (Central Agent)
-
-Understands user intent
-
-Extracts meaning
-
-Calls appropriate modules
-
-Generates clean output
-
-🎥 Demo
-User Input
+### **User Input**
 Create a high-priority task to review project reports due in 2 days and analyze its priority.
 
-Agent Actions
+### **Agent Output**
 
-Detects task creation
-
-Parses due date
-
-Creates task
-
-Calculates urgency
-
-Auto-schedules session
-
-Logs metrics
-
-Output
 Task created: Review project reports (Priority 1, Due: 2025-11-22)
 Priority: Medium
 Event scheduled from 2025-11-20T15:00 to 2025-11-20T17:00
 
-Supported Examples
+### **Supported Commands**
+- “List my tasks”  
+- “Mark assignment as completed”  
+- “Create a task due in 3 days”  
+- “Schedule 2 hours tomorrow afternoon”  
+- “Analyze this task’s priority”  
 
-“List my tasks”
+---
 
-“Mark assignment as completed”
+## 🛠️ Build – Tools & Technologies
 
-“Create a task due in 3 days”
+- **Python** for backend logic  
+- **In-memory storage** for tasks/events  
+- **UUID** for unique task/event IDs  
+- **datetime** for deadline + scheduling logic  
+- **Rule-based NLP** for lightweight intent understanding  
+- **Metrics monitoring** for performance  
 
-“Schedule 2 hours tomorrow afternoon”
+---
 
-“Analyze this task’s priority”
+## ✨ Key Features
+- Natural-language task creation  
+- Automatic priority analysis  
+- Auto-scheduling of work sessions  
+- Task tracking  
+- Event creation  
+- Clean structured output  
+- Agent-driven logic  
 
-🛠️ Build – Tools & Technologies
+---
 
-Python backend
+## 🔮 Future Enhancements
 
-In-memory storage for tasks & events
+### With more time, I would add:
+- Machine learning–based scheduling  
+- Google/Outlook calendar sync  
+- Push notifications  
+- Daily wellness suggestions  
+- Productivity dashboard (charts, analytics)  
+- Multi-agent collaboration  
+  - Task Agent  
+  - Scheduling Agent  
+  - Wellness Agent  
 
-UUID for unique identifiers
+---
 
-datetime for deadline/scheduling logic
+## 🧩 Conclusion
+The **Smart Work–Life Balance Assistant** demonstrates how intelligent agents can simplify daily planning by automating key decisions about tasks, deadlines, and schedules.
 
-Rule-based NLP (lightweight, fast)
+It reduces stress, improves productivity, and helps maintain a healthier work–life balance—all through simple natural-language interaction.
 
-Metrics logger for performance tracking
+---
 
-No heavy ML models—just clean logic + intelligent agents.
+## 📄 Author
+**Shweta Ithape**  
+Smart Work–Life Balance Assistant — AI Agent Project  
 
-📌 Features
+---
 
-✔ Natural-language task creation
-✔ Automated scheduling
-✔ Smart priority detection
-✔ Task logging and tracking
-✔ Event scheduling
-✔ Intent-based agent routing
-✔ Metrics + performance scoring
-
-🧩 Future Improvements
-
-If given more time, the project will evolve into a fully intelligent personal productivity ecosystem.
-
-🔮 Planned Enhancements
-
-Machine-learning–based scheduling
-
-Google/Outlook calendar sync
-
-Push notifications
-
-Wellness advisor (break reminders, stress detection)
-
-Workload analytics dashboard
-
-Multi-agent collaboration
-
-Task Agent
-
-Scheduling Agent
-
-Wellness Agent
-
-📘 Conclusion
-
-The Smart Work–Life Balance Assistant showcases how lightweight intelligent agents can simplify life by reducing decision fatigue and managing responsibilities autonomously.
-
-It transforms daily planning into an effortless, automated experience—improving productivity, reducing stress, and promoting a healthier work–life balance.
