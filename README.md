@@ -1,4 +1,5 @@
-**# 🧠 Smart Work–Life Balance Assistant**
+## 🧠 Smart Work–Life Balance Assistant
+
 An AI-powered assistant that helps users maintain a healthy work–life balance by intelligently managing tasks, analyzing priorities, and scheduling work sessions using autonomous agents.
 
 ---
